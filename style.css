@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --corfundo1: black;
+    --corfundo2:rgb(248, 220, 224);
+    --corpadrao:#ff66c4 ;
+}
+
+/*Barra de rolagem*/
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--corpadrao);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--corfundo1);
+    border-radius: 10px;
+    border:  2px solid var(--corfundo2);
+}
+
+/*cabeçalho*/
+.container{
+    padding: 60px;
+    background-color: var(--corfundo1);
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.container img{
+    margin-top: -40px;
+    margin-left: 26px;
+    margin-right: 100px;
+    float: left;
+    height: 150px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+header nav a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--corpadrao);
+}
+
+button{
+    background-color: var(--corpadrao);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;;
+    margin: 8px;
+}
+
+nav button:hover{
+    background-color: #FFB3E2;
+}
+
+/*Inicio*/
+#inicio{
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('./img/inicio/foto-capa.jpg');
+    color: whitesmoke;
+
+    height: 600px;
+    background-size: cover;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#inicio h1{
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif; 
+    
+}
+.texto{
+    margin-top: 50px;
+}
+#inicio p{
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+
+#inicio h2{
+    font-size: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+}
+
+main button{
+    background-color: var(--corpadrao);
+    color: white;
+    font-family: 'Sansita Swashed', cursiva ;
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    margin: 8px;
+    margin-top: 50px;
+}
+
+main button:hover{
+    background-color:#FFB3E2;
+}
+
+/*Agência*/
+#agencia{
+    padding-bottom: -200px;
+    background-color: var(--corfundo2);
+    margin-bottom: -120px;
+}
+
+#agencia h1{
+    margin-top: 20px;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#agencia p{
+    width: 500px;
+    height: 200px;
+    margin-left: 140px; 
+    margin-top: 30px;
+   
+
+}
+#agencia, .conteudo{
+    color: var(--corfundo1);
+    float: right;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+#agencia img{
+    width: 30%;
+    float: right;
+    margin-left: 150px;
+    margin-right: 140px;
+}
+
+/*Modelos*/
+#modelos{
+    margin-top: 318px;
+    text-align: center;
+    background-color: var(--corfundo1);
+    color: whitesmoke;
+}
+#modelos h1{
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.container-model img{
+  width: 236px;
+  height: 350px;
+}
+ .model2, .model3, .model4{
+    margin-left: 20px;
+}
+.container-model{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#modelos button{
+    background-color: var(--corpadrao);
+    color: white;
+    font-family: 'Sansita Swashed', cursiva ;
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    margin: 8px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#modelos button:hover{
+    background-color: pink;
+}
+
+/*Serviços*/
+#servicos{
+    background-color: var(--corfundo2);
+    padding-top: 8px;
+}
+#servicos h1{
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.container-curso, .container-casting{
+    width: 50%;
+    display: inline-block;
+
+}
+
+.container-curso{
+    float: left;
+}
+
+.container-curso img, .container-casting img{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+.container-curso  p, .container-casting p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container-curso  h2, .container-casting h2{
+    margin-left: 30px;
+}
+.container-casting{
+    margin-bottom: 50px;
+}
+/*Contato*/
+#contato{
+    margin-top: -30px;
+    color: whitesmoke;
+    background-color: var(--corfundo1);
+    padding-top: 2px;
+    padding-bottom: 40px;
+}
+#contato h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contato img{
+    float: left;
+    margin-top: -10px;
+    margin-left: 80px;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+}
+.endereco{
+  color: var(--corpadrao);
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.tel{
+    margin-top: 10px;
+    color: var(--corpadrao);
+    margin-left: 40px;
+}
+
+.email{
+    margin-top: 10px;
+    color: var(--corpadrao);
+    margin-left: 40px;
+}
+.redes{
+    margin-top: 10px;
+    color: var(--corpadrao);
+    margin-left: 40px;
+}
+.contatos i{
+    margin-right: 10px;
+    color: var(--corpadrao); 
+}
+.contatos i:hover{
+    color: whitesmoke;
+}
+
+.contatos h3{
+    color: whitesmoke;
+}
+
+
